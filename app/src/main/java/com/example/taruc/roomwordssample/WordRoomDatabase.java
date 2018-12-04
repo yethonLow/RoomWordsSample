@@ -24,6 +24,7 @@ public abstract class WordRoomDatabase extends RoomDatabase {
                             // if no Migration object.
                             // Migration is not part of this practical.
                             .fallbackToDestructiveMigration()
+                            .addCallback(sRoomDatabaseCallback)
                             .build();
                 }
             }
